@@ -1,6 +1,6 @@
 # e2e-cypress-allure
 
-This repository is the result of my task work project for Assert QA in E2E QA Automation.
+This repository is the result of my task work project for E2E QA Automation.
 
 I spent 1 days on the realization and setting up this project. JavaScript programming language was used to write the code.
 
