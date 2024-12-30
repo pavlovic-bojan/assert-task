@@ -13,17 +13,17 @@ describe('Task page for Assert QA', () => {
     })
 
 
-    it.skip('Validate that the buttons are visible', () => {
+    it('Validate that the buttons are visible', () => {
         cy.get(elements.Button).should('be.visible')
     })
 
-    it.skip('Validate that the buttons edit & delete are visible', () => {
+    it('Validate that the buttons edit & delete are visible', () => {
         cy.get(elements.EditDeleteButtonLocator).should('be.visible')
     })
 
     const buttons = [elements.Button, elements.EditDeleteButtonLocator]
     buttons.forEach((button, i) => {
-        it(`Validate that the buttons, and edit - delete are visible`, () => {
+        it.skip(`Validate that the buttons, and edit - delete are visible`, () => {
             cy.get(button).should('be.visible')
         })
     })
@@ -72,6 +72,18 @@ describe('Task page for Assert QA', () => {
 
     it('Validate that the buttons are not visible - this test should always fail', () => {
         cy.get(elements.Button).should('not.be.visible')
+    })
+
+    it('Validate that the user is on the task page and perform lighthouse performance', () => {        cy.url().should('contains', elements.PageUrl)
+        cy.title().should('eq', elements.PageTitle)
+        cy.get(elements.H3OnPageLocator).should('have.text', elements.H3OnPageText)
+        cy.lighthouse({
+            performance: 10,
+            accessibility: 10,
+            "best-practices": 10,
+            seo: 10,
+            pwa: 10,
+        })
     })
 
 })
