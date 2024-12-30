@@ -1,0 +1,12 @@
+{
+  "PageTitle": "The Internet",
+  "PageUrl": "challenging_dom",
+  "H3OnPageLocator": ".example > h3",
+  "H3OnPageText": "Challenging DOM",
+  "Button": ".button",
+  "EditDeleteButtonLocator": "td > a",
+  "EditButtonText": "edit",
+  "EditButtonUrl": "#edit",
+  "DeleteButtonText": "delete",
+  "DeleteButtonUrl": "#delete"
+}
