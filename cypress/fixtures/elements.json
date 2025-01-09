@@ -1,5 +1,6 @@
 {
   "PageTitle": "The Internet",
+  "FullPageUrl":"https://the-internet.herokuapp.com/challenging_dom",
   "PageUrl": "challenging_dom",
   "H3OnPageLocator": ".example > h3",
   "H3OnPageText": "Challenging DOM",
@@ -8,5 +9,9 @@
   "EditButtonText": "edit",
   "EditButtonUrl": "#edit",
   "DeleteButtonText": "delete",
-  "DeleteButtonUrl": "#delete"
+  "DeleteButtonUrl": "#delete",
+  "button": ".large-2.columns > a",
+  "button_1": "button",
+  "button_2": "button alert",
+  "button_3": "button success"
 }
